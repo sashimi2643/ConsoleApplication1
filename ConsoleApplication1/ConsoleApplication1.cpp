@@ -5,9 +5,30 @@
 
 int main()
 {
-	for (int i = 0; i < 100; i++) {
+	/*for (int i = 0; i < 100; i++) {
 		std::cout << i + 1 << "Hello World!\n";
+	}*/
+	// C++
+	auto forward = std::string("Hello World!");
+	auto reverse = forward;
+
+	std::reverse(reverse.begin(), reverse.end());
+
+	auto i = 10;
+
+	while (i--) {
+		if (i & 1) {
+			std::cout << reverse << std::endl;
+		}
+		else {
+			std::cout << forward << std::endl;
+		}
 	}
+}
+
+
+void sample() {
+
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
